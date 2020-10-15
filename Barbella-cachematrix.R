@@ -1,10 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
-
 #La inversión de matrices suele ser un cálculo costoso y puede ser beneficioso almacenar en caché la inversa de una matriz en lugar de calcularla repetidamente. 
 #Por eso es que usamos estas funciones para almacenar en caché la inversa de una matriz.
 
-## Write a short comment describing this function
 #Esta función crea un objeto matricial especial que puede almacenar 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
