@@ -1,7 +1,7 @@
-#La inversión de matrices suele ser un cálculo costoso y puede ser beneficioso almacenar en caché la inversa de una matriz en lugar de calcularla repetidamente. 
-#Por eso es que usamos estas funciones para almacenar en caché la inversa de una matriz.
+#Matrix inversion is usually a costly calculation and it can be beneficial to cache the inverse of a matrix instead of calculating it repeatedly.
+#That's why we use these functions to cache the inverse of a matrix.
 
-#Esta función crea un objeto matricial especial que puede almacenar 
+#This function creates a special matrix object that you can store 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
         set <- function(y) {
@@ -16,7 +16,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-#Esta función calcula la inversa de la "matriz" especial devuelta por la función anterior. 
+#This function calculates the inverse of the special "matrix" returned by the previous function.
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
           inv <- x$getinv()
@@ -28,7 +28,7 @@ cacheSolve <- function(x, ...) {
         inv <- solve(data, ...)
         x$setinv(inv)
         inv
-#Si ya se ha calculado la inversa (y la matriz no ha cambiado), 
-        #entonces la solución de caché debería dar la inversa de la caché.
+#If the inverse has already been calculated (and the matrix has not changed),
+         #then the cache solution should give the reverse of the cache.
 
 }
